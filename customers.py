@@ -122,3 +122,11 @@ for transaction in transactions:
 for region in sorted(sales_by_region):
      print(f"{region}: ${sales_by_region[region]:.2f}")
 
+# Reflection 1:
+
+# I would use .get() for optional information, such as email, because it allows me to provide a default value if the key is not present. This prevents the program from raising a KeyError and allows for smoother handling of missing data.
+
+
+# Reflection 2:
+
+# Building a summary dictions reminds me of Excel's SUMIF function, where you can aggregate data based on certain criteria. In this case, we are summing sales amounts by region, which is similar to how SUMIF would work in Excel to sum values based on a specific condition.
