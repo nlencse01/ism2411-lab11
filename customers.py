@@ -68,3 +68,23 @@ print(f"Customer Tier: {customer['tier']}")
 print(f"Purchase Price: ${purchase_price:.2f}")
 print(f"Discount Rate: {discount_rate * 100:.0f}%")
 print(f"Final Price: ${final_price:.2f}")
+
+# Exercise 6: List of Dictionaries
+
+print("\nExercise 6")
+
+customers = [
+    {"name": "Alice", "tier": "platinum"},
+    {"name": "Bob", "tier": "silver"},
+    {"name": "Charlie", "tier": "gold"},
+]
+
+purchase_amount = 300
+
+for person in customers:
+   rate = tier_discounts.get(person["tier"], 0)
+   discount_amount = purchase_amount * rate
+   print(
+        f"{person['name']} | Tier: {person['tier']} | "
+        f"Discount: ${discount_amount:.2f} | "
+   )
