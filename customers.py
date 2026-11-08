@@ -15,3 +15,15 @@ print(customer["ytd_spend"])
 print(customer)
 
 
+# Exercise 2: Multiple Customers
+
+print("\nExercise 2")
+
+customer["phone"] = "555-123-4567"
+print(customer)
+
+customer["tier"] = "Platinum"
+print(customer)
+
+del customer["email"]
+print(customer)
