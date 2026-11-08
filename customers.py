@@ -38,3 +38,14 @@ try:
     print(customer["email"])
 except KeyError:
     print("Email not found")
+
+# Exercise 4: Iterate
+
+print("\nExercise 4")
+
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+for key in customer.keys():
+        print(key)
+
