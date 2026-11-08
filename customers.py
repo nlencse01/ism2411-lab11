@@ -22,7 +22,7 @@ print("\nExercise 2")
 customer["phone"] = "555-123-4567"
 print(customer)
 
-customer["tier"] = "Platinum"
+customer["tier"] = "platinum"
 print(customer)
 
 del customer["email"]
@@ -49,3 +49,22 @@ for key, value in customer.items():
 for key in customer.keys():
         print(key)
 
+# Exercise 5: Lookup Table
+
+print("\nExercise 5")
+
+tier_discounts = {
+    "bronze": 0,
+    "silver": 0.05,
+    "gold": 0.10,
+    "platinum": 0.15
+}
+
+discount_rate = tier_discounts.get(customer["tier"], 0)
+purchase_price = 200
+final_price = purchase_price * (1 - discount_rate)
+
+print(f"Customer Tier: {customer['tier']}")
+print(f"Purchase Price: ${purchase_price:.2f}")
+print(f"Discount Rate: {discount_rate * 100:.0f}%")
+print(f"Final Price: ${final_price:.2f}")
