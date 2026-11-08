@@ -27,3 +27,14 @@ print(customer)
 
 del customer["email"]
 print(customer)
+
+# Exercise 3: Safe Lookup
+
+print("\nExercise 3")
+
+print(customer.get("email", "Email not found"))
+
+try: 
+    print(customer["email"])
+except KeyError:
+    print("Email not found")
